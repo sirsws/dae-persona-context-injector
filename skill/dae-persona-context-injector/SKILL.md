@@ -106,8 +106,8 @@ Real user profiles should be treated as local private configuration assets.
 
 Read these references before running the skill:
 
-- `references/DaE_Skill_Prompt_v2.md`
-- `references/DaE_v2_acceptance_criteria.md`
+- `references/DaE_Skill_Prompt_en.md`
+- `references/DaE_v2_acceptance_criteria_en.md`
 
 Use the prompt file as the execution source.
 Use the acceptance file as the quality gate.

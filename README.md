@@ -152,8 +152,8 @@ Current stage:
 
 - positioning finalized
 - first benchmark completed
-- ClawHub / GitHub / agent-store release assets prepared
-- pending platform submission and security testing
+- ClawHub / GitHub / agent-store release assets published
+- ClawHub live, OpenClaw marked Benign, VirusTotal clean
 
 ## One-line summary
 
