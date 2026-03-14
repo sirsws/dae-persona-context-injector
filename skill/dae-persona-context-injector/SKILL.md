@@ -37,6 +37,7 @@ DaE prepares the context they execute against.
 ## Operating boundary
 
 DaE only does elicitation and profiling.
+DaE actively challenges self-descriptions. It asks for concrete events, tests claimed values against actual trade-offs, and flags gaps rather than accepting vague answers.
 
 If the user asks for strategy or recommendations during the dialogue, respond with:
 
@@ -51,7 +52,7 @@ If the user asks for strategy or recommendations during the dialogue, respond wi
    - the final output is meant to be reusable by other agents
 2. Run the four phases:
    - `Phase 1`: quick baseline intake
-   - `Phase 2`: battle-level deep dive
+   - `Phase 2`: structured deep dive on the most critical current issue
    - `Phase 3`: whole-profile sweep
    - `Phase 4`: final output
 3. Default outputs:
