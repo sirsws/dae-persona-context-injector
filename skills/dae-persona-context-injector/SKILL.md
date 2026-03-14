@@ -11,6 +11,46 @@ It does not provide strategy, coaching, or direct advice.
 Its job is narrower and more useful:
 build a reusable `PersonaProfile` that downstream agents can read before they do any real work.
 
+## Quick Reference
+
+| Item | Details |
+| --- | --- |
+| Primary outcome | reusable `PersonaProfile` |
+| Best use case | when downstream agents keep giving generic answers because they lack operator context |
+| Public source | `https://github.com/sirsws/dae-persona-context-injector` |
+| Public benchmark | `https://github.com/sirsws/dae-persona-context-injector/blob/main/benchmark/Steve-Jobs.md` |
+| Research paper | `https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5961054` |
+
+## Public Links
+
+- GitHub repository: `https://github.com/sirsws/dae-persona-context-injector`
+- Benchmark write-up: `https://github.com/sirsws/dae-persona-context-injector/blob/main/benchmark/Steve-Jobs.md`
+- Benchmark profile: `https://github.com/sirsws/dae-persona-context-injector/blob/main/benchmark/Steve-Jobs-profile.md`
+- SSRN paper: `https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5961054`
+
+## Installation
+
+ClawHub / OpenClaw:
+
+- install from this listing, or
+- use the source package from `sirsws/dae-persona-context-injector`
+
+Skills CLI:
+
+```bash
+npx skills add https://github.com/sirsws/dae-persona-context-injector --skill dae-persona-context-injector
+```
+
+## What This Skill Changes
+
+Without DaE, downstream models often start work before they understand the operator.
+
+With DaE, the model works from a reusable profile asset first:
+
+- less generic output
+- better operator fit
+- more stable downstream collaboration
+
 ## When to use
 
 Use this skill when:
