@@ -1,8 +1,8 @@
 <!--
 File: README.zh-CN.md
-Core: Chinese companion README for the DaE product repository.
+Core: Chinese companion README for the DaE product repository and distribution entrypoints.
 Input: English product positioning and the current release assets.
-Output: Chinese overview page linked from the main README.
+Output: Chinese overview page linked from the main README, including Skills CLI install guidance.
 -->
 
 # DaE：人格上下文注入层
@@ -113,8 +113,21 @@ https://github.com/sirsws/DaE-Personal-Strategic-Asset
 DaE 当前面向三类分发：
 
 - `ClawHub / OpenClaw` 技能
+- `Skills CLI / skills.sh` 技能
 - 智能体商店 onboarding agent
 - 自定义 agent 工作流中的前置协议
+
+## 安装方式
+
+可通过 Skills CLI 从仓库直接安装：
+
+```bash
+npx skills add https://github.com/sirsws/dae-persona-context-injector --skill dae-persona-context-injector
+```
+
+对应的 Skills CLI 兼容技能包路径：
+
+- [Skills 包入口](./skills/dae-persona-context-injector/SKILL.md)
 
 当前文案草案见：
 
@@ -135,4 +148,5 @@ DaE 当前面向三类分发：
 - 定位已收束
 - 第一轮 benchmark 已完成
 - ClawHub / GitHub / 智能体商店发布资产已备齐
-- 待平台提交与安全测试
+- Skills CLI 兼容目录结构已补齐
+- ClawHub 已上线，安全扫描已通过

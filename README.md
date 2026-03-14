@@ -1,8 +1,8 @@
 <!--
 File: README.md
-Core: Public GitHub landing page for the DaE product repository.
+Core: Public GitHub landing page for the DaE product repository and distribution entrypoints.
 Input: Final positioning, benchmark summary, SSRN link, and distribution targets.
-Output: English README suitable for the repository root.
+Output: English README suitable for the repository root, including Skills CLI install guidance.
 -->
 
 # DaE: Persona Context Injector
@@ -129,8 +129,21 @@ This is a reusable configuration asset, not a motivational essay.
 DaE can be distributed in three forms:
 
 - as a `ClawHub / OpenClaw` skill
+- as a `Skills CLI / skills.sh` skill
 - as an `agent-store` onboarding agent
 - as a protocol integrated into custom agent workflows
+
+## Install
+
+Install from the repository with the Skills CLI:
+
+```bash
+npx skills add https://github.com/sirsws/dae-persona-context-injector --skill dae-persona-context-injector
+```
+
+The Skills CLI-compatible package lives at:
+
+- [Skills package](./skills/dae-persona-context-injector/SKILL.md)
 
 Draft copy:
 
@@ -153,6 +166,7 @@ Current stage:
 - positioning finalized
 - first benchmark completed
 - ClawHub / GitHub / agent-store release assets published
+- Skills CLI-compatible package structure added
 - ClawHub live, OpenClaw marked Benign, VirusTotal clean
 
 ## One-line summary
