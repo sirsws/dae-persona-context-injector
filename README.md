@@ -134,6 +134,7 @@ Draft copy:
 
 - [ClawHub skill page](./docs/clawhub-copy.md)
 - [Agent-store landing copy](./docs/agent-store-copy.md)
+- [Skill package](./skill/dae-persona-context-injector/SKILL.md)
 
 ## Security and boundaries
 

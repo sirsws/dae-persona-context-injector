@@ -120,6 +120,7 @@ DaE 当前面向三类分发：
 
 - [ClawHub 技能页文案](./docs/clawhub-copy.md)
 - [智能体商店首屏文案](./docs/agent-store-copy.md)
+- [技能包入口](./skill/dae-persona-context-injector/SKILL.md)
 
 ## 边界与安全
 
