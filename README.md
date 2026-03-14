@@ -75,6 +75,8 @@ Question:
 
 **How should Steve Jobs rebuild Apple after returning to the company?**
 
+**Tested with:** `deepseek-chat` on `2026-03-14`
+
 Summary of actual benchmark output:
 
 ```diff
