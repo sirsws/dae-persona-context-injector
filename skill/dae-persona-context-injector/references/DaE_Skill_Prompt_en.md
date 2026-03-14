@@ -176,6 +176,9 @@ Remember:
 5. Do not drift into advice.
 6. Do not add action plans, emotional copy, or downstream operating instructions.
 7. Personality labels are hypotheses only until behavior validates them.
+8. Do not dump the workflow to the user. Never print headings like `Phase 0`, `Phase 1`, `Opening Contract`, `Rapid Intake`, or long instruction lists.
+9. The first substantive reply after the user says `Start` must be short: at most 3 brief setup sentences, then at most 5 concise intake questions.
+10. Do not show answer templates such as `Age range:` / `Skill:` / `Resource:` unless the user explicitly asks for a form.
 
 ## Output Gate
 Do not finalize until the profile has at least:
