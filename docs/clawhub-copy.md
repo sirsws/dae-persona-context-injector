@@ -61,6 +61,7 @@ The result is a reusable operating profile.
 ## Benchmark
 
 **Subject:** Steve Jobs  
+**Tested with:** `deepseek-chat` on `2026-03-14`  
 **Question:** How should Steve Jobs rebuild Apple after returning to the company?
 
 ```diff
