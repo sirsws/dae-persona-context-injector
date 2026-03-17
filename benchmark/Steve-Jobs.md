@@ -10,6 +10,17 @@ Output: A benchmark write-up suitable for GitHub readers.
 DaE does not make the model smarter in general.
 It gives the model a structured personal context layer, so the answer becomes more operator-specific instead of collapsing into generic advice.
 
+## Methodological scope
+
+Steve Jobs is extensively documented in model training data. The model holds independent prior knowledge about him independent of any injected profile.
+
+This means the comparison below cannot cleanly isolate the elicitation effect from the model's prior knowledge. What this case demonstrates:
+
+- DaE's question framework produces structured profiles organized by dimension (Drives, Tensions, DecisionStyle, etc.) rather than flat biographical summaries
+- When a profile is loaded, the downstream response reorganizes around the subject's operating logic rather than generic turnaround advice
+
+This case validates the **question framework design and output structure**. It does not measure the injection effect in isolation. A clean injection test requires a profile built from a real user's live dialogue, where the model has no prior knowledge of that person.
+
 ## Setup
 
 - Subject: `Steve Jobs`
@@ -37,7 +48,7 @@ What is missing:
 ## Output with DaE profile
 
 ```text
-Jobs should rebuild Apple by cutting aggressively before he tries to heal anything. Shrink the product line, concentrate authority around a small number of product decisions, and force the company back to end-to-end ownership of the user experience. He should not optimize for broad internal comfort or stakeholder consensus, because Apple's recovery in his hands would come from restoring product coherence and a single standard of taste.
+Jobs should rebuild Apple by cutting aggressively before he tries to heal anything. Shrink the product line, concentrate authority around a small number of product decisions, and force the company back to end-to-end ownership of the user experience. He should not optimize for broad internal comfort or stakeholder consensus, because Apple’s recovery in his hands would come from restoring product coherence and a single standard of taste.
 ```
 
 What changed:

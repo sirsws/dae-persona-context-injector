@@ -2,7 +2,7 @@
 File: README.md
 Core: Public GitHub landing page for the DaE product repository and distribution entrypoints.
 Input: Final positioning, benchmark summary, SSRN link, and distribution targets.
-Output: English README suitable for the repository root, including Skills CLI install guidance.
+Output: English README suitable for the repository root, including the canonical Skills CLI package path after duplicate-package cleanup.
 -->
 
 # DaE: Persona Context Injector
@@ -66,18 +66,19 @@ It is a reusable operating profile.
 
 Public demos do not use real private user profiles.
 
-The first benchmark uses **Steve Jobs** as a public historical subject and tests the same model with the same question under two conditions:
+### Framework validation case
 
-- without a PersonaProfile
-- with a DaE PersonaProfile loaded
+The first validation case uses **Steve Jobs** as a public historical subject to test whether DaE's question framework produces structured, dimension-rich profiles through elicitation.
 
-Question:
+**Methodological scope:** Steve Jobs is extensively documented in model training data. The model holds independent prior knowledge about him. The comparison below shows how a structured profile focuses a response — but cannot cleanly isolate the elicitation effect from the model's prior knowledge. This case validates the **question framework design and output structure**, not the downstream injection effect in isolation.
+
+A clean injection test requires a profile built from a real user's live dialogue, where the model has no prior knowledge of that person.
+
+Question used:
 
 **How should Steve Jobs rebuild Apple after returning to the company?**
 
 **Tested with:** `deepseek-chat` on `2026-03-14`
-
-Summary of actual benchmark output:
 
 ```diff
 - WITHOUT PROFILE
@@ -91,6 +92,12 @@ More detail:
 
 - [Benchmark write-up](./benchmark/Steve-Jobs.md)
 - [Benchmark profile](./benchmark/Steve-Jobs-profile.md)
+
+### Real-user elicitation
+
+When DaE runs on a real user — someone the model has no prior knowledge of — the profile is built entirely from live dialogue responses. That is the intended operating mode.
+
+Anonymous sample outputs from real elicitation sessions will be added here as they are cleared for publication.
 
 ## Research foundation
 
@@ -141,7 +148,7 @@ Install from the repository with the Skills CLI:
 npx skills add https://github.com/sirsws/dae-persona-context-injector --skill dae-persona-context-injector
 ```
 
-The Skills CLI-compatible package lives at:
+The canonical Skills CLI-compatible package lives at:
 
 - [Skills package](./skills/dae-persona-context-injector/SKILL.md)
 
@@ -149,7 +156,6 @@ Draft copy:
 
 - [ClawHub skill page](./docs/clawhub-copy.md)
 - [Agent-store landing copy](./docs/agent-store-copy.md)
-- [Skill package](./skill/dae-persona-context-injector/SKILL.md)
 
 ## Security and boundaries
 

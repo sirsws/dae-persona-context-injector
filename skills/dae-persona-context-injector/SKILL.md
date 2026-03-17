@@ -156,14 +156,15 @@ Use the acceptance file as the quality gate.
 
 Public benchmark subject: `Steve Jobs`
 
+**Methodological scope:** Steve Jobs is a well-documented public figure with extensive model training coverage. This case validates DaE's **question framework design and output structure** — not the downstream injection effect in isolation. A clean injection test requires a profile generated from a real user's live dialogue, where the model has no prior knowledge of that person.
+
 Headline test:
 
 **How should Steve Jobs rebuild Apple after returning to the company?**
 
-Observed effect:
+Observed output difference:
 
 - without profile: generic turnaround framing
-- with DaE profile: control-first, trade-off-aware reasoning
+- with DaE profile: control-first, trade-off-aware reasoning organized around the subject's known operating logic
 
-This is the point of DaE:
-not to make the model smarter in general, but less generic for a specific operator.
+Full write-up: `https://github.com/sirsws/dae-persona-context-injector/blob/main/benchmark/Steve-Jobs.md`
