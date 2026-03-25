@@ -1,41 +1,58 @@
-# DaE
+﻿<!--
+File: README.md
+Core: Public GitHub landing page for the legacy DaE repository, now positioned as the DaE branch entry under the AKM mother hub.
+Input: AKM parent definition, DaE paper line, distribution targets, and current branch-level release assets.
+Output: English README suitable for the legacy public repository while preserving clear upstream/downstream hierarchy.
+-->
 
-<p align="center">
-  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
-</p>
+# DaE: The First AKM Reference Implementation
 
-<p align="center">
-  <a href="https://github.com/sirsws/akm"><img src="https://img.shields.io/badge/AKM-mother%20hub-0969da" alt="AKM" /></a>
-  <a href="https://github.com/sirsws/akm/tree/main/branches/dae"><img src="https://img.shields.io/badge/branch-DaE-1f6feb" alt="DaE Branch" /></a>
-  <img src="https://img.shields.io/badge/repository-public%20skill%20distribution-2da44e" alt="Repository Role" />
-</p>
+**Profile first. Then collaborate.**
 
-**The first reference implementation of AKM for persona-aware advisory and collaboration.**
+[简体中文](./README.zh-CN.md)
 
-## Quick Links
+DaE is the first complete implementation of **Active Knowledge Modeling (AKM)** in persona and advisory collaboration.
 
-- **AKM mother hub:** https://github.com/sirsws/akm
-- **DaE branch in AKM:** https://github.com/sirsws/akm/tree/main/branches/dae
-- **DaE skill spec in AKM:** https://github.com/sirsws/akm/blob/main/branches/dae/skill/SKILL.md
-- **DaE paper entry in AKM:** https://github.com/sirsws/akm/tree/main/branches/dae/paper
+This repository should be understood as a legacy public entry point for the `DaE branch` of the AKM ecosystem rather than as the canonical source of AKM itself.
 
-## Repository Role
+## What DaE does
 
-This repository remains the public distribution and compatibility entry for the DaE skill package.
-It focuses on installable skill assets, benchmark material, and legacy packaging structure.
+DaE turns active user modeling into an operational branch by generating a reusable `PersonaProfile`, so downstream agents can understand the user before they start planning, coding, writing, researching, or advising.
 
-## Core Idea
+## Role in the AKM structure
 
-DaE is built around one upstream asset: `PersonaProfile`.
-The method is simple but consequential:
+AKM has three layers:
 
-**model the user first, then let downstream agents work from stronger context.**
+- the parent concept layer
+- branch implementations
+- derived research evidence
 
-## Best Use
+DaE sits in the second layer.
 
-Use this repository when you need the public DaE skill package itself.
-Use the AKM mother hub when you need the broader method context, branch map, and research structure.
+## Research foundation
 
-## One-Line Summary
+The canonical concept source is **AKM**, not this repository.
 
-DaE is the first AKM reference implementation for persona-aware collaboration.
+DaE is grounded in the research paper:
+
+**Dialogue as Elicitation: A Framework for High-Fidelity Persona Profiling in Human-AI Collaboration**  
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5961054
+
+Related research repository:
+
+https://github.com/sirsws/DaE-Personal-Strategic-Asset
+
+AKM mother hub:
+
+https://github.com/sirsws/akm
+
+## Branch entrypoints
+
+- current mother-hub branch page: https://github.com/sirsws/akm/tree/main/branches/dae
+- branch skill package in this repository: `./skills/dae-persona-context-injector/SKILL.md`
+- branch benchmark assets: `./benchmark/`
+
+## One-line summary
+
+DaE is the first complete AKM branch implementation for agents: build the user model first, then let downstream agents work from a stronger starting point.
+
